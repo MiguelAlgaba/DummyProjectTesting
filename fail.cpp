@@ -1,14 +1,17 @@
 #include <cstdlib>
+#include <iostream>
 
 int main()
 {
     if(1==0)
     {
-        return EXIT_FAILURE;
+        std::cerr << "SUCCESS" << std::endl;
+        return EXIT_SUCCESS;
     }
     else
     {
-        return EXIT_SUCCESS;
+        std::cerr << "FAILURE" << std::endl;
+        return EXIT_FAILURE;
     }
 
 }
