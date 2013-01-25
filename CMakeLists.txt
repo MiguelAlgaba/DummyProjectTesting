@@ -10,4 +10,7 @@ add_test( NAME failingtest COMMAND ${CMAKE_BINARY_DIR}/fail )
 add_executable(pass pass.cpp)
 add_test( NAME passingtest COMMAND ${CMAKE_BINARY_DIR}/pass )
 
+add_executable(dummyFeature dummyFeature.cpp)
+add_test( NAME dummyFeaturetest COMMAND ${CMAKE_BINARY_DIR}/dummyFeature )
+
 
